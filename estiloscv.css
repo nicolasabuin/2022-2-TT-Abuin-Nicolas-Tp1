@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "Inter";
+	src: url("fonts/Inter-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Amazing Grotesk";
+	src: url("fonts/Amazing Grotesk Book.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+/* -------------------------------- ESTO ES EL HEADER -------------------------------- */
+
+header {
+	display: flex;
+	background-color:#E9A2E0;
+	width: 100%;
+	padding: 20px 50px 20px 50px;
+	justify-content: center;
+}
+
+.contenedor{
+	max-width: 1266px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.titulo{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.botonera {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+}
+
+.botones{
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-family: "Inter", "Roboto", "Serif";
+	font-size: 0.9em;
+}
+
+.boton:hover{
+	cursor: pointer;
+	color:black;
+	font-size: 1.25em;
+}
+
+/* -------------------------------- ESTO ES EL MAIN -------------------------------- */
+
+main {
+	background-color:#0F0F0F;
+	width: 100%;
+	height: 100vh;
+	padding: 50px 50px 20px 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.contenedor-main{
+	max-width: 1266px;
+	width: 100%;
+}
+
+h2, h3 {
+	font-family: "Amazing Grotesk", "Inter";
+	font-size: 1.6em;
+}
+h1 {
+	font-family: "Inter", "Roboto", "sans-serif";
+	font-size: 1.9em;
+}
+.rosa {
+	font-family: "Amazing Grotesk", "Inter";
+	font-size: 1.6em;
+	color:#E9A2E0;
+}
+.rosah4 {  
+	font-family: "Amazing Grotesk", "Inter";
+	font-size: 1.25em;
+	color:#E9A2E0;
+}
+.textoblanco, .exp {
+	font-family: "Inter", "Roboto", "sans-serif";
+	font-size: 0.9em;
+	line-height: 1.4em;
+	color:white;
+}
+p {
+	font-family: "Inter", "Roboto", "sans-serif";
+	font-size: 0.9em;
+	line-height: 1.4em;
+	color:white;
+}
+
+.bold{
+	font-family: 'Inter SemiBold';
+	font-size: 1em;
+	line-height: 1.4em;
+	color:white;
+}
+
+/* -------------------------------- ESTO ES INFO 1 -------------------------------- */
+.info1{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.sobremi {
+	width: 33%;
+}
+
+.educacion{
+	width: 33%;
+
+}
+
+/* -------------------------------- ESTO ES INFO 2 -------------------------------- */
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	cursor:pointer;
+	color:#E9A2E0;
+}
+
+h5{
+	display: flex;
+	font-family: "Inter", "Roboto", "sans-serif";
+	font-size: 0.9em;
+	color:white;
+}
+
+.info2{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 30px 0;
+}
+.verproyetos{
+	font-family: 'Inter SemiBold', 'Inter Black';
+	font-size: 1em;
+	line-height: 1.4em;
+	color:white;
+}
+.experiencia{
+	width: 33%;
+}
+
+.skills {
+	flex-direction: column;
+	width: 33%;
+}
+
+.galeria{
+	width: 33%;
+	flex-direction: column;
+
+	
+}
+
+/* -------------------------------- ESTO ES FOOTER -------------------------------- */
+
+footer {
+	display: flex;
+	bottom: 0;
+	justify-content: center;
+	background-color:#E9A2E0;
+	width: 100%;
+	padding: 20px;
+	position: fixed;	
+}
+.contenedor-footer{
+	max-width: 1266px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* -------------------------------- ACÁ ARRANCA PARA CELULAR -------------------------------- */
+
+@media screen and (max-width:600px){
+	
+	
+	header {
+	display: flex;
+	flex-direction: column;
+	background-color:#E9A2E0;
+	width: 100%;
+	padding: 30px;
+	justify-content: center;
+}
+
+.contenedor{
+	max-width: 540px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.titulo{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.botonera {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.botones{
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-family: "Inter", "Roboto", "Serif";
+	font-size: 0.9em;
+}
+
+.boton:hover{
+	cursor: pointer;
+	color:black;
+	font-size: 1.25em;
+}
+
+main {
+	background-color:#0F0F0F;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.contenedor-main{
+	max-width: 540px;
+	width: 100%;
+}
+
+
+.info1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+.sobremi {
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.educacion{
+	padding-top: 20px;
+	width: 100%;
+}
+	
+.info2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.experiencia{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.skills {
+	flex-direction: column;
+	width: 100%;
+	padding-bottom: 20px;
+}
+.galeria{
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+		
+footer {
+	display: flex;
+	position: relative;
+	background-color:#E9A2E0;
+	width: 100%;
+	padding: 20px;
+}
+.contenedor-footer{
+	display: flex;
+	justify-content: space-between;
+}
+	
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
